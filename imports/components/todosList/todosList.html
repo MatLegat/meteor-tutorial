@@ -1,0 +1,13 @@
+<header>
+  <h1>Todo List</h1>
+  <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)">
+
+  <input ng-model="$ctrl.newTask" type="text" name="text" placeholder="Digite nova tarefa"/>
+</form>
+</header>
+
+<ul>
+  <li ng-repeat="task in $ctrl.tasks">
+    {{task.text}}
+  </li>
+</ul>

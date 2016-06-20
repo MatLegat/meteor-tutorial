@@ -1,0 +1,128 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-color: #358;
+  background-image: linear-gradient(to bottom, #57a, #358 100%);
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+
+  font-size: 12pt;
+}
+
+.container {
+  max-width: 50em;
+  margin: 0  auto;
+  min-height: 100%;
+  background: #fff;
+}
+
+header {
+  background: #def;
+  background-image: linear-gradient(to bottom, #def, #eef 100%);
+  padding: 1.25em, 1em, 1em, 1em;
+  position: relative;
+}
+
+.login-buttons {
+  display: block;
+}
+
+h1 {
+  padding-left: 0.75em;
+  padding-top: 0.75em;  
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+form {
+  margin-top: 0.75em;
+  margin-bottom: -0.75em;
+  position: relative;
+}
+
+.new-task input {
+  box-sizing: border-box;
+  padding: 0.75em;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 20em;
+  font-size: 1em;
+}
+
+.new-task input:focus {
+  outline: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.delete {
+    float: right;
+    font-weight: bold;
+    background: none;
+    font-size: 1em;
+    border: none;
+    position: relative;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    padding: 1em;
+    border-bottom: #eee solid 1px;
+}
+
+li .text {
+    margin-left: 10px;
+}
+
+li.checked {
+    color: #888;
+}
+
+li.checked .text {
+  text-decoration: line-through;
+}
+
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+
+header .hide-completed {
+  float: right;
+}
+
+.toggle-private {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  li {
+      padding: 12px 15px;
+  }
+
+  .search {
+      width: 150px;
+      clear: both;
+  }
+
+  .new-task input {
+      padding-bottom: 5px;
+  }
+
+}
