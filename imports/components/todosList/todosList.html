@@ -1,9 +1,14 @@
 <header>
-  <h1>Todo List</h1>
-  <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)">
+  <h1>Todo List ({{$ctrl.incompleteCount}})</h1>
 
-  <input ng-model="$ctrl.newTask" type="text" name="text" placeholder="Digite nova tarefa"/>
-</form>
+  <label class="hide-completed">
+    <input type="checkbox" ng-model="$ctrl.hideCompleted" />
+    Ocultar tarefas completadas
+  </label>
+
+  <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)">
+    <input ng-model="$ctrl.newTask" type="text" name="text" placeholder="Digite nova tarefa"/>
+  </form>
 </header>
 
 <ul>
